@@ -5,4 +5,11 @@ module Player
     @mark = mark
   end
 
+  def play(board, step)
+    board[step] = @mark
+  end
+
+  def to_s
+    "(#{mark})"
+  end
 end
